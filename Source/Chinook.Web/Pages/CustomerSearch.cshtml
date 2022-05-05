@@ -9,11 +9,10 @@
     <p>Search for customers by last name.</p>
 
     <form method="get">
-        <input name="search"> 
+        <input name="search" type="text" maxlength="20">
         <input type="submit">
     </form>
 </div>
-
-<div>
-    @Html.Raw(Model.Result)
-</div>
+<tr>
+    <td>@Model.Result</td>
+</tr>
