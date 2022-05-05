@@ -1,0 +1,19 @@
+﻿@page
+@model Chinook.Web.Pages.CustomerSearchModel
+@{
+}
+
+<h1>Search for customers</h1>
+
+<div>
+    <p>Search for customers by last name.</p>
+
+    <form method="get">
+        <input name="search"> 
+        <input type="submit">
+    </form>
+</div>
+
+<div>
+    @Html.Raw(Model.Result)
+</div>

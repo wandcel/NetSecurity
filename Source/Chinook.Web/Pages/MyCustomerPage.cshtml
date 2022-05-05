@@ -1,0 +1,21 @@
+﻿@page
+@model Chinook.Web.Pages.MyCustomerPageModel
+@{
+}
+
+<h1>Your customer info</h1>
+
+<table>
+    <tr>
+        <td>Company</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+        </tr>
+    <tr>
+        <td>@Model.Customer?.Company</td>
+        <td>@Model.Customer?.FirstName @Model.Customer?.LastName</td>
+        <td>@Model.Customer?.Email</td>
+        <td>@Model.Customer?.Phone</td>
+    </tr>
+</table>
